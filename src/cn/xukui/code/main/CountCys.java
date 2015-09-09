@@ -10,13 +10,18 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class RunConcuShell {
+/***
+ * Count the number of Cys in a series of fasta formatted protein sequences
+ * @author Barry Kui
+ * @time 2015-09-01
+ */
+public class CountCys {
 
 	public static void main(String[] args) {
 		// 1.#### Parameter configuration
 		if (args.length < 2 || (args.length == 1 && args[0].equals("-h"))) {
 			System.out.println("");
-			System.out.println("Concu   : Count Cys in fasta file.");
+			System.out.println("CountCys   : Count Cys in fasta file.");
 			System.out.println("Version : 0.0.1");
 			System.out.println("Usage   : java -jar countcys.jar -f test.fasta");
 			System.out.println(" -f  <str>    Protein fasta file.");
